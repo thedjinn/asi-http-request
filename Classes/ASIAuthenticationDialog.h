@@ -6,6 +6,9 @@
 //  Copyright 2009 All-Seeing Interactive. All rights reserved.
 //
 
+#import <Availability.h>
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class ASIHTTPRequest;
@@ -33,3 +36,5 @@ typedef enum _ASIAuthenticationType {
 @property (assign) BOOL didEnableRotationNotifications;
 @property (retain, nonatomic) UIViewController *presentingController;
 @end
+
+#endif

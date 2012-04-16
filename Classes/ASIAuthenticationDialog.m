@@ -6,6 +6,9 @@
 //  Copyright 2009 All-Seeing Interactive. All rights reserved.
 //
 
+#import <Availability.h>
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+
 #import "ASIAuthenticationDialog.h"
 #import "ASIHTTPRequest.h"
 #import <QuartzCore/QuartzCore.h>
@@ -491,3 +494,5 @@ static const NSUInteger kDomainSection = 1;
 @synthesize didEnableRotationNotifications;
 @synthesize presentingController;
 @end
+
+#endif
